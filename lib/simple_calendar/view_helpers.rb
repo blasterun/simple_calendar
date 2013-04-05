@@ -106,7 +106,7 @@ module SimpleCalendar
 
     # Generates the link to next and previous months
     def month_link(text, date, opts={})
-      link_to(text, {:month => date.month, :year => date.year}, opts)
+      link_to(text, {:month => date.month, :year => date.year, :format=>:json}, opts)
     end
   end
 end
